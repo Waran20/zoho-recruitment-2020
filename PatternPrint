@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+package com.in28minutes.springboot.web.service;
+
+import java.util.Scanner;
+
+/**
+ * @author Sarveshwaran
+ *
+ */
+public class PatternPrint {
+
+	/**
+	 * 
+	 * @param num
+	 */
+	public static void print(int num) {
+		
+		for (int i = num; i >0; i--) 
+		{
+			
+			for(int j = num; j > i; j--) 
+			{
+				System.out.print(j);	
+			}
+			
+			for(int j = i; j > 0; j--) 
+			{
+				System.out.print(i);	
+			}
+			System.out.println();
+		}
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter a number: ");
+			int num=sc.nextInt();
+			print(num);
+			
+		
+	}
+
+}
